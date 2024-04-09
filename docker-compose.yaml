@@ -1,0 +1,36 @@
+version: '3.3'
+
+services:
+  pixel_api:
+    build:
+      context: .
+      dockerfile: ./src/SuperTracker.PixelApi/Dockerfile
+    ports:
+      - "8000:8080"
+    depends_on:
+      - rabbitmq
+      - storage
+    environment:
+      - RabbitMq__Host=rabbitmq
+      - RabbitMq__Username=super_tracker
+      - RabbitMq__Password=carrot123
+
+  storage:
+    build:
+      context: .
+      dockerfile: ./src/SuperTracker.Storage/Dockerfile
+    depends_on:
+      - rabbitmq
+    environment:
+      - RabbitMq__Host=rabbitmq
+      - RabbitMq__Username=super_tracker
+      - RabbitMq__Password=carrot123
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"  # RabbitMQ default port
+      - "15672:15672"  # RabbitMQ management UI port
+    environment:
+      - RABBITMQ_DEFAULT_USER=super_tracker
+      - RABBITMQ_DEFAULT_PASS=carrot123

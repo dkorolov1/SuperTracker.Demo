@@ -1,0 +1,23 @@
+### Pixel Track Request #1
+GET {{host}}/track
+Content-Type: application/json
+Referer: "https://www.imaginaria.com/land-of-wonders"
+User-Agent: "MagicBrowser/7.0 (WizardOS X 12_3_4) UnicornEdition"
+
+{}
+
+### Pixel Track Request #2
+GET {{host}}/track
+Content-Type: application/json
+Referer: "https://www.fantasticaljourney.com/enchanted-forest"
+User-Agent: "MysticalBrowser/9.5 (WizardOS X 20_4_2) DragonEditio"
+
+{}
+
+### Pixel Track Request #3
+GET {{host}}/track
+Content-Type: application/json
+Referer: null
+User-Agent: null
+
+{}

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B2778F58-5E53-4083-AFE2-59FBE48F9E89}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperTracker.PixelApi", "src\SuperTracker.PixelApi\SuperTracker.PixelApi.csproj", "{63406554-BAFB-4209-A9A1-9147F0F6E62C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTracker.Contracts", "src\SuperTracker.Contracts\SuperTracker.Contracts.csproj", "{DDC1D3BB-34D9-4A43-A0A2-9E730DB4BB50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTracker.Storage", "src\SuperTracker.Storage\SuperTracker.Storage.csproj", "{8FCC1502-A651-4DA3-8C3F-76501539AE69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{10650953-1BCA-4E1C-A215-9CA7FF426634}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTracker.PixelApi.UnitTests", "tests\SuperTracker.PixelApi.UnitTests\SuperTracker.PixelApi.UnitTests.csproj", "{AB92668E-E7BA-4D43-B48B-58CE911E64B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTracker.Storage.UnitTests", "tests\SuperTracker.Storage.UnitTests\SuperTracker.Storage.UnitTests.csproj", "{1A613DA1-DBCD-496A-9718-F0A6C49CA14D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63406554-BAFB-4209-A9A1-9147F0F6E62C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63406554-BAFB-4209-A9A1-9147F0F6E62C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63406554-BAFB-4209-A9A1-9147F0F6E62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63406554-BAFB-4209-A9A1-9147F0F6E62C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDC1D3BB-34D9-4A43-A0A2-9E730DB4BB50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC1D3BB-34D9-4A43-A0A2-9E730DB4BB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC1D3BB-34D9-4A43-A0A2-9E730DB4BB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDC1D3BB-34D9-4A43-A0A2-9E730DB4BB50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FCC1502-A651-4DA3-8C3F-76501539AE69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FCC1502-A651-4DA3-8C3F-76501539AE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FCC1502-A651-4DA3-8C3F-76501539AE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FCC1502-A651-4DA3-8C3F-76501539AE69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB92668E-E7BA-4D43-B48B-58CE911E64B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB92668E-E7BA-4D43-B48B-58CE911E64B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB92668E-E7BA-4D43-B48B-58CE911E64B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB92668E-E7BA-4D43-B48B-58CE911E64B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A613DA1-DBCD-496A-9718-F0A6C49CA14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A613DA1-DBCD-496A-9718-F0A6C49CA14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A613DA1-DBCD-496A-9718-F0A6C49CA14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A613DA1-DBCD-496A-9718-F0A6C49CA14D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{63406554-BAFB-4209-A9A1-9147F0F6E62C} = {B2778F58-5E53-4083-AFE2-59FBE48F9E89}
+		{DDC1D3BB-34D9-4A43-A0A2-9E730DB4BB50} = {B2778F58-5E53-4083-AFE2-59FBE48F9E89}
+		{8FCC1502-A651-4DA3-8C3F-76501539AE69} = {B2778F58-5E53-4083-AFE2-59FBE48F9E89}
+		{AB92668E-E7BA-4D43-B48B-58CE911E64B6} = {10650953-1BCA-4E1C-A215-9CA7FF426634}
+		{1A613DA1-DBCD-496A-9718-F0A6C49CA14D} = {10650953-1BCA-4E1C-A215-9CA7FF426634}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD193C98-78E3-4C8E-8791-585368DDBFC5}
+	EndGlobalSection
+EndGlobal
